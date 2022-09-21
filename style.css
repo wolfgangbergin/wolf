@@ -3,22 +3,39 @@
   margin: 0px;
   box-sizing: border-box;
 }
+.wrapper {
 
-body {
- display: grid;
- grid-template-areas: 
+  display: grid;
+  
+ 
 
- 'body'
- 'header'
- ;
- margin: 100px;
+align-self: flex-end;
+justify-self: center;
+ 
+  border: green 3px dotted;
+
 }
 
-#header{
-    background-color: aqua;
-    grid-area: 'header';
+
+
+
+.nested {
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  gap: 1rem;
+ 
 }
 
-.main{
-    background-color: green;
+.test1{
+  border: red 3px solid;
+  padding: 2rem;
 }
+.test2{
+  border: pink 3px solid;
+  padding: 2rem;
+}
+.test3{
+  border: black 3px solid;
+  padding: 2rem;
+}
+
