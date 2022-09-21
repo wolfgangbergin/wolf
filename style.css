@@ -9,10 +9,10 @@
   
  
 
-align-self: flex-end;
-justify-self: center;
+
  
-  border: green 3px dotted;
+
+  height: 100vh;
 
 }
 
@@ -22,17 +22,21 @@ justify-self: center;
 .nested {
   display: grid;
   grid-template-rows: 1fr 9fr;
-  gap: 1rem;
+
  
 }
 
 .test1{
+    background-color: rebeccapurple;
   border: red 3px solid;
   padding: 2rem;
 }
 .test2{
+    color: aliceblue;
+    background-color:black;
   border: pink 3px solid;
   padding: 2rem;
+
 }
 .test3{
   border: black 3px solid;
