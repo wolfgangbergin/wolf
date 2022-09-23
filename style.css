@@ -18,7 +18,8 @@ body {
 
 
 .content {
-   
+ /* position: relative;
+   top: 106px; */
   height: 200vh;
   background-color: #333;
   background-image: url(./puppie.jpg);
@@ -36,6 +37,42 @@ body {
   width: 100%;
   z-index: 990;
 }
+.nav-toggle{
+    display: none;
+}
+.nav-toggle-lebel{
+    position: absolute;
+    top:0;
+    left:0;
+   margin-left: 1em;
+   
+   height: 100%;
+   display: flex;
+   align-items: center;
+   
+}
+.nav-toggle-lebel span,
+.nav-toggle-lebel span::before,
+.nav-toggle-lebel span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.nav-toggle-lebel span::before,
+.nav-toggle-lebel span::after{
+    content: '';
+    position: absolute;
+    
+}
+.nav-toggle-lebel span::before{
+    bottom: 7px;
+}
+.nav-toggle-lebel span::after{
+    top: 7px;
+}
 
 nav{
     position: absolute;
@@ -43,8 +80,9 @@ nav{
     top: 100%;
     left: 0;
     background: var(--background);
-    /* height: 100vh; */
-    width: 100%;
+    height: 100vh;
+    /* width: 100%; */
+    
 }
  
 
@@ -62,4 +100,8 @@ nav a{
 nav a:hover {
     color: red;
     font-size: x-large;
+}
+
+.nav-toggle:checked ~ nav{
+display:block;
 }
