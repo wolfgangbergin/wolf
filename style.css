@@ -20,10 +20,16 @@
 .nav{
     background-color: var(--background);
     position: absolute;
-    top: 0%;
+    top: 7.55%;
+    left:0%;
     height: 200vh;
     text-decoration: none;
     
+}
+.nav li{
+   list-style: none;
+    padding-top: .5rem ;
+
 }
 
 .content{
