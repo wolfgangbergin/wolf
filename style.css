@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.header{
+    background-color: rgba(220, 120,125, .5);
+    align-content: center;
+    padding: 1rem;
+}
+.logo{
+   color: aqua;
+   text-align: center;
+}
+
+.content{
+display: flex;
+background-image: url(./puppie.jpg);
+height: 200vh;
+}
