@@ -4,15 +4,26 @@
     box-sizing: border-box;
 
 }
+:root{
+    --background: rgba(220, 20,125, .3)
+}
 .header{
   
-    background-color: rgba(220, 120,125, .5);
+    background-color: var(--background);
     align-content: center;
     padding: 1rem;
 }
 .logo{
    color: aqua;
    text-align: center;
+}
+.nav{
+    background-color: var(--background);
+    position: absolute;
+    top: 0%;
+    height: 200vh;
+    text-decoration: none;
+    
 }
 
 .content{
