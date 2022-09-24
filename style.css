@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+   
 }
 :root{
     --background: rgba(220, 20,125, .3)
@@ -13,10 +13,12 @@
     background-color: var(--background);
     align-content: center;
     padding: .5rem;
+    
 }
 .logo{
    color: aqua;
    text-align: center;
+   
 }
 .nav{
     background-color: var(--background);
@@ -38,18 +40,49 @@
 display: flex;
 background-image: url(./puppie.jpg);
 height: 200vh;
+
 }
 .nav-checkbox{
     display: none;
+    
 }
 
 .nav-checkbox:checked ~ .nav{
     display: block; 
-}
-
-.nav-span{
-    background-color: aqua;
-    width: 10px;
-    height: 10px;
     
 }
+.label {
+    display: flex;
+    height: 100%;
+    justify-self: end;
+    align-items: start;
+    align-content: end;
+    align-self: flex-end;
+
+    border: green 3px dotted;
+}
+.nav-span,
+.nav-span::after,
+.nav-span::before{
+    background: whitesmoke;
+    width: 40px;
+    height: 3px;
+    display: block;
+    border-radius: 10%;
+   
+}
+.nav-span::after,
+.nav-span::before{
+    content: '';
+    position: relative;
+}
+
+.nav-span::before{
+    color: red;
+   top: 10px;
+   
+}
+.nav-span::after{
+    bottom: 10px;
+}
+
