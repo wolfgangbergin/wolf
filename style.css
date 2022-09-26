@@ -27,13 +27,14 @@
   /* display: none; */
   backface-visibility: hidden;
   transform: rotateY(0deg);
-
-  transition: transform 800ms ease-in;
+  opacity: 1;
+  transition: transform 1s ease-in,   opacity 1s;
   
 }
 .nav-checkbox:checked ~ .nav {
   /* display: block;  */
   transform: rotateY(150deg);
+  opacity: 0;
 }
 .nav li {
   list-style: none;
@@ -80,13 +81,18 @@
   bottom: 15px;
 }
 .nav-list li a {
-  font-size: large;
+  
   color: black;
-  text-decoration: none;
-  transition: color 2s, font-size 500ms;
+  transform: rotate(180deg);
+ 
+  transition: color 1s, font-size 1s  ease;
+  
 }
 .nav-list li a:hover {
+
   text-decoration: underline;
   font-size: xx-large;
   color: red;
+ 
 }
+
