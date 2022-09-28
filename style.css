@@ -5,7 +5,7 @@
   font-family: fantasy;
 }
 :root {
-  --background: rgba(120, 120, 125, 0.4);
+  --background: rgba(120, 120, 125, 0);
 }
 .header {
   position: fixed;
@@ -29,10 +29,9 @@
   backface-visibility: hidden;
   transform: rotateY(0deg);
   opacity: 1;
-  transition: transform 1s ease-in, opacity 1s;
+  transition: transform 1s ease-in, opacity 0.2s;
 }
 .nav-checkbox:checked ~ .nav {
-  /* display: block;  */
   transform: rotateY(150deg);
   opacity: 0;
 }
@@ -42,8 +41,9 @@
 }
 
 .content {
-  display: flex;
+   
   background-image: url(./puppie.jpg);
+
   height: 200vh;
 }
 .nav-checkbox {
@@ -63,8 +63,8 @@
 .nav-span::after,
 .nav-span::before {
   background: whitesmoke;
-  width: 40px;
-  height: 3px;
+  width: 30px;
+  height: 2px;
   display: block;
   border-radius: 10%;
 }
@@ -75,90 +75,76 @@
 }
 
 .nav-span::before {
-  top: 15px;
+  bottom: 25px;
 }
 .nav-span::after {
-  bottom: 15px;
+  top: 25px;
 }
 .nav-list li a {
   color: black;
   transform: rotate(180deg);
 
-  transition: color 1s, font-size 1s ease;
+  transition: color 0.2s, font-size 0.2s ease;
 }
 .nav-list li a:hover {
   text-decoration: none;
   font-size: xx-large;
   color: red;
+  transition: color 1s, font-size 5s ease;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 820px) {
   .nav-span {
     display: none;
   }
   .header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(100px, 3fr) 1fr;
+    grid-template-columns: auto auto;
   }
 
   .logo {
-    grid-column: 2/3;
-    
+    grid-column: 1/2;
   }
-  
+
   .nav {
     all: unset;
-    grid-column: 3/5;
+    grid-column: 2/5;
 
     position: relative;
   }
   .nav-list {
     display: flex;
-    
+
     flex-flow: row nowrap;
     justify-content: flex-end;
-    
-  
   }
- 
-  .nav-list li a{
-  
-    color: blue;
+
+  .nav-list li a {
+    color: blueviolet;
     text-decoration: none;
   }
-  .nav-list li a::before{
-    content: "";
+  .nav-list li a::before {
+    content: '';
     background: red;
-   position: absolute;
- top: .2rem;
-   width: 3.55em;
-   height: .2em;
-   text-decoration: none;
-   transform: scale(0, 1);
-   transition: transform 1s;
-  }
-  .nav-list li a:hover::before{
-    content: "";
-    background: red;
-   position: absolute;
- top: .2rem;
-   width: 3.55em;
-   height: .2em;
-   text-decoration: none;
-   transform: scale(1,1);
-   
-  }
-}
-
-.wolf{
     position: absolute;
-    top:50%;
-    left:50%;
-    font-size: 3rem;
+    top: 0.2rem;
+    width: 3.55em;
+    height: 0.2em;
+    text-decoration: none;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform 1s;
+  }
+  .nav-list li a:hover::before {
+    content: '';
+    background: red;
+    position: absolute;
+    top: 0.2rem;
+    width: 3.55em;
+    height: 0.2em;
+    text-decoration: none;
+    transform: scale(1, 1);
+    transform-origin: right;
+    transition: transform 0.2s;
+  }
 }
-.wolf::before{
-    content: "WOLFGANG -";
-    background: blue;
-}
-
-
