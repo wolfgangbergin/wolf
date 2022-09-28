@@ -87,7 +87,7 @@
   transition: color 1s, font-size 1s ease;
 }
 .nav-list li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   font-size: xx-large;
   color: red;
 }
@@ -108,29 +108,44 @@
   
   .nav {
     all: unset;
-    grid-column: 3/4;
+    grid-column: 3/5;
 
     position: relative;
   }
   .nav-list {
     display: flex;
     
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-end;
+    
+  
   }
+ 
   .nav-list li a{
-    border: green 3px dotted;
+  
     color: blue;
     text-decoration: none;
   }
   .nav-list li a::before{
     content: "";
-    background: aqua;
+    background: red;
    position: absolute;
  top: .2rem;
    width: 3.55em;
    height: .2em;
-  
+   text-decoration: none;
+   transform: scale(0, 1);
+   transition: transform 1s;
+  }
+  .nav-list li a:hover::before{
+    content: "";
+    background: red;
+   position: absolute;
+ top: .2rem;
+   width: 3.55em;
+   height: .2em;
+   text-decoration: none;
+   transform: scale(1,1);
    
   }
 }
