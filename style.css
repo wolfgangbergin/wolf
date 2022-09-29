@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,12 +42,7 @@
   padding: 0.5rem;
 }
 
-.content {
-   
-  background-image: url(./puppie.jpg);
 
-  height: 200vh;
-}
 .nav-checkbox {
   display: none;
 }
@@ -114,9 +111,8 @@
   }
   .nav-list {
     display: flex;
-
-    flex-flow: row nowrap;
     justify-content: flex-end;
+    align-items: center;
   }
 
   .nav-list li a {
@@ -125,26 +121,38 @@
   }
   .nav-list li a::before {
     content: '';
+    display: block;
+    height: 5px;
     background: red;
-    position: absolute;
-    top: 0.2rem;
-    width: 3.55em;
-    height: 0.2em;
-    text-decoration: none;
     transform: scale(0, 1);
     transform-origin: left;
-    transition: transform 1s;
+    transition: transform 1s ease-in-out;
   }
   .nav-list li a:hover::before {
-    content: '';
-    background: red;
-    position: absolute;
-    top: 0.2rem;
-    width: 3.55em;
-    height: 0.2em;
-    text-decoration: none;
     transform: scale(1, 1);
     transform-origin: right;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease-in-out;
   }
+}
+
+.content {
+    /* position: static; */
+    /* display: block;  */
+    background-image: url(./puppie.jpg);
+  
+    height: 200vh;
+  }
+
+.wolf1 {
+    /* position: static; */
+  border: green 3px dotted;
+}
+.wolf2 {
+    /* position: static; */
+  border: blue 3px dotted;
+}
+.wolf3 {
+    /* position: static; */
+  border: red
+   3px dotted;
 }
