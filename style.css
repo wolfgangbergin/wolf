@@ -7,7 +7,7 @@
   font-family: fantasy;
 }
 :root {
-  --background: rgba(120, 120, 125, 0);
+  --background: rgba(120, 120, 225, .5);
 }
 .header {
   position: fixed;
@@ -15,6 +15,7 @@
   background-color: var(--background);
   align-content: center;
   padding: 0.5rem;
+
 }
 .logo {
   color: aqua;
@@ -77,26 +78,27 @@
 .nav-span::after {
   top: 25px;
 }
-.nav-list li a {
+.navButton {
   color: black;
-  transform: rotate(180deg);
+ 
 
   transition: color 0.2s, font-size 0.2s ease;
 }
-.nav-list li a:hover {
+.navButton:hover {
   text-decoration: none;
   font-size: xx-large;
   color: red;
   transition: color 1s, font-size 5s ease;
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 500px) {
   .nav-span {
     display: none;
   }
   .header {
     display: grid;
     grid-template-columns: auto auto;
+  
   }
 
   .logo {
@@ -115,11 +117,11 @@
     align-items: center;
   }
 
-  .nav-list li a {
+  .navButton {
     color: blueviolet;
     text-decoration: none;
   }
-  .nav-list li a::before {
+  .navButton::before {
     content: '';
     display: block;
     height: 5px;
@@ -128,7 +130,7 @@
     transform-origin: left;
     transition: transform 1s ease-in-out;
   }
-  .nav-list li a:hover::before {
+  .navButton:hover::before {
     transform: scale(1, 1);
     transform-origin: right;
     transition: transform 0.2s ease-in-out;
@@ -140,8 +142,19 @@
     /* display: block;  */
     background-image: url(./puppie.jpg);
   
-    height: 200vh;
+    height: 100vh;
   }
+
+  .cssPositioning{
+    background-color: gray;
+  }
+  
+
+.extra-space{
+
+  height: 8rem;
+}
+
 
 .wolf1 {
     /* position: static; */
@@ -150,6 +163,7 @@
 .wolf2 {
     /* position: static; */
   border: blue 3px dotted;
+  display: flex;
 }
 .wolf3 {
     /* position: static; */

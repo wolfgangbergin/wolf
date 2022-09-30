@@ -8,6 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning HTML and CSS</title>
+    <script>
+      globalThis.__proto__.log = console.log;
+    </script>
+    <script type="module" src="./scripts/nav.js" defer>
+      
+    </script>
   </head>
   <body>
    <header class="header">
@@ -18,16 +24,10 @@
     </label>
 <div class="nav">
     <ul class="nav-list">
-        <li ><a href="*">HOME1</a></li>
-        <li ><a href="*">HOME1</a></li>
-        <li ><a href="*">HOME1</a></li>
-        <li ><a href="*">HOME1</a></li>
-        <li ><a href="*">HOME1</a></li>
+       
+        <li><button class="navButton" id="cssPositioning">wolf</button></li>
+        <li><button class="navButton" id="test1">test1</button></li>
         
-        <li ><a href="*">HOME1</a></li>
-        <li ><a href="*">HOME1</a></li>
-        <li ><a href="*">HOME1</a></li>
-        <li ><a href="*">HOME1</a></li>
        
      
         
@@ -41,12 +41,9 @@
 
 </header>
 
-   <div class="content">
+   <div class="content" id="content">
 
-   <div class="wolf1">wolf1</div>
-   <span class="wolf2">wolf2</span>
-   <span class="wolf3">wolf3</span>
-   
+ 
 </div>
 
      
