@@ -7,7 +7,7 @@
   font-family: fantasy;
 }
 :root {
-  --background: rgba(120, 120, 225, .5);
+  --background: rgba(220, 120, 225, .5);
 }
 .header {
   position: fixed;
@@ -98,7 +98,8 @@
   .header {
     display: grid;
     grid-template-columns: auto auto;
-  
+ /* display: none;  */
+ /* z-index: 10; */
   }
 
   .logo {
@@ -169,4 +170,5 @@
     /* position: static; */
   border: red
    3px dotted;
+   
 }
