@@ -27,12 +27,10 @@
   position: absolute;
   top: 100%;
   left: 0%;
-  height: 200vh;
+  height: 100vh;
   text-decoration: none;
 
- 
-
-  transition: transform .5s ease-in;
+  transition: transform 0.5s ease-in;
 }
 .nav-checkbox:checked ~ .nav {
   transform: rotateY(90deg);
@@ -80,6 +78,11 @@
 .navButton {
   color: black;
 }
+.wolfgang{
+  position:relative;
+  border: red 3px solid;
+  top: 3rem;
+}
 
 @media screen and (min-width: 500px) {
   .nav-span {
@@ -107,7 +110,6 @@
     align-items: center;
   }
 
-
   .navButton::before {
     content: '';
     display: block;
@@ -122,36 +124,16 @@
     transform-origin: right;
     transition: transform 0.2s ease-in-out;
   }
+  .wolfgang{
+   
+margin-left: 0;   
+  }
 }
 
 .content {
   /* position: static; */
   /* display: block;  */
-  background-image: url(./puppie.jpg);
-
+  background-image: url(./lopez.jpg);
+background-size: cover;
   height: 200vh;
-}
-.header-space {
-  height: 4rem;
-}
-.cssPositioning {
-  text-align: center;
-}
-
-.extra-space {
-  position: static;
-  height: 8rem;
-}
-
-.wolf1 {
-  /* position: static; */
-  border: green 3px dotted;
-}
-.wolf2 {
-  /* position: static; */
-  border: blue 3px dotted;
-}
-.wolf3 {
-  /* position: static; */
-  border: red 3px dotted;
 }

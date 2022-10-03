@@ -1,0 +1,98 @@
+
+.cssPositioning {
+    text-align: center;
+  }
+  
+  
+  
+  .wolf1 {
+    border: green 3px dotted;
+  
+    top:10px;
+  
+  }
+  .wolf2 {
+    border: blue 3px dotted;
+    background-color: blue;
+    /* position: fixed; */
+    /* position: relative; */
+    /* position: sticky; */
+    /* position: absolute; */
+    /* position: static; */
+    position: static;
+  top:10px;
+  
+   display: block;
+   width: 100%;
+   
+  }
+  .wolf3 {
+    border: red 3px dotted;
+  
+    position: static;
+   
+  }
+  .wolf4 {
+    border: yellowgreen 3px dotted;
+    /* position: fixed; */
+    /* position: relative; */
+    /* position: absolute; */
+    position: static;
+    top:100px;
+   left: 0;
+   
+  }
+  .wolf5 {
+    border: blue 3px dotted;
+    background-color: blue;
+  
+    position: absolute;
+  top:0;
+  left:50%;
+  
+  display: flex;
+  height: 500px;
+  align-items: center;
+   
+  }
+  
+  .container {
+    
+    position: relative;
+   
+    border: green 3px solid;
+    /* left: 30vw; */
+  
+  }
+  
+  .topleft {
+    position: absolute;
+    top:50%;
+    width: 100%;
+  
+    text-align: center;
+    font-size: 18px;
+    border: yellow 3px solid;
+   
+  }
+  
+  .lopez{
+    position: fixed;
+    
+    border: hotpink 3px dotted;
+    opacity: 1;
+  width: 380px;
+  height: 500px;
+  transform: rotate(45deg);
+  }
+  .bergin{
+    position: static;
+    top: 100px;
+    background-color: yellowgreen;
+  }
+  
+    /* position: fixed; */
+    /* position: relative; */
+    /* position: sticky; */
+    /* position: absolute; */
+    /* position: static; */
