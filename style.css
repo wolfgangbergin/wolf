@@ -71,6 +71,7 @@
 
 .nav-span::before {
   bottom: 25px;
+  
 }
 .nav-span::after {
   top: 25px;
@@ -80,7 +81,7 @@
 }
 .wolfgang{
   position:relative;
-  border: red 3px solid;
+  border: red 1px solid;
   top: 3rem;
 }
 
@@ -133,7 +134,7 @@ margin-left: 0;
 .content {
   /* position: static; */
   /* display: block;  */
-  background-image: url(./lopez.jpg);
-background-size: cover;
+  background-image: url(./puppie.jpg);
+
   height: 200vh;
 }
