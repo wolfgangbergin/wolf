@@ -82,8 +82,8 @@
 }
 .wolfgang{
   position:relative;
-  border: red 1px solid;
-  top: 3rem;
+ 
+  top: 3.5rem;
 }
 
 @media screen and (min-width: 500px) {
@@ -135,7 +135,10 @@ margin-left: 0;
 .content {
   /* position: static; */
   /* display: block;  */
-  background-image: url(./puppie.jpg);
-
-  height: 200vh;
+  background-image: url(./wolf.jpg);
+background-size:350px;
+  height: 100vh;
+}
+p::after { 
+  content: " - Remember this";
 }
