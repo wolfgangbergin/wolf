@@ -87,6 +87,14 @@
   text-align: center;
 }
 
+.content {
+  /* position: static; */
+  /* display: block;  */
+  background-image: url(./wolf.jpg);
+background-size:100vw;
+  height: 100vh;
+}
+
 @media screen and (min-width: 500px) {
   .nav-span {
     display: none;
@@ -133,13 +141,3 @@ margin-left: 0;
   }
 }
 
-.content {
-  /* position: static; */
-  /* display: block;  */
-  background-image: url(./wolf.jpg);
-background-size:420px;
-  height: 100vh;
-}
-p::after { 
-  content: " - Remember this";
-}
