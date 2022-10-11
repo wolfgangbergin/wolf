@@ -20,7 +20,7 @@
   height: 4rem;
 }
 .logo {
-  color: aqua;
+  color: red;
   text-align: center;
 }
 .nav {
@@ -83,7 +83,8 @@
 .wolfgang{
   position:relative;
  
-  top: 3.5rem;
+  top: 4rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 500px) {
@@ -136,7 +137,7 @@ margin-left: 0;
   /* position: static; */
   /* display: block;  */
   background-image: url(./wolf.jpg);
-background-size:350px;
+background-size:420px;
   height: 100vh;
 }
 p::after { 

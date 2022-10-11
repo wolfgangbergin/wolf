@@ -4,7 +4,7 @@ export function wolf1(){
 
    nfl.innerHTML = `
  
-
+   <div>wolfgang1</div>
 
    
  `

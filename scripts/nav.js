@@ -14,11 +14,13 @@ test.addEventListener('click', () => nav('test1'));
 function nav(param1) {
   switch (true) {
     case param1 === 'wolf1':
+      wolfgang.innerHTML = null;
       wolfgang.appendChild(wolf1());
       break;
     case param1 === 'test1':
+    
       wolfgang.innerHTML = null;
-      wolfgang.appendChild(test1());
+      wolfgang.innerHTML = test1();
       break;
     default:
       log('default');

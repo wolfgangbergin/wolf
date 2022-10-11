@@ -10,15 +10,12 @@ export function test1(){
     let wolf = `
  
  
- 
-    
-    <div class="test1">
+ <div>wolfgang2</div>
 
-    <p class="test1">test1<p>
     
-     </div>
+ 
     `
-     return list
+     return wolf
      
  
  }
