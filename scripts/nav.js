@@ -1,31 +1,32 @@
 
 
 import { wolf1 } from './wolf1/wolf1.js';
-import { test1 } from './css1/test1.js';
+import { wolf2 } from './wolf2/wolf2.js';
 
-let cssButton = document.getElementById('cssPositioning');
+let wolf_1 = document.getElementById('wolf_1');
 let content = document.getElementById('content');
 let wolfgang = document.getElementById('wolfgang');
-let test = document.getElementById('test1');
+let wolf_2 = document.getElementById('wolf_2');
 
-cssButton.addEventListener('click', () => nav('wolf1'));
-test.addEventListener('click', () => nav('test1'));
+wolf_1.addEventListener('click', () => nav('wolf_1'));
+wolf_2.addEventListener('click', () => nav('wolf_2'));
 
 function nav(param1) {
   switch (true) {
-    case param1 === 'wolf1':
+    case param1 === 'wolf_1':
+      log('1')
       wolfgang.innerHTML = null;
-      wolfgang.appendChild(wolf1());
+      wolfgang.innerHTML = wolf1();
       break;
-    case param1 === 'test1':
-    
+    case param1 === 'wolf_2':
+    log('2')
       wolfgang.innerHTML = null;
-      wolfgang.innerHTML = test1();
+      wolfgang.innerHTML = wolf2();
       break;
     default:
       log('default');
   }
 }
-nav('wolf1');
+nav('wolf_1');
 
 
