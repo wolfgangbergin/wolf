@@ -14,12 +14,12 @@ wolf_2.addEventListener('click', () => nav('wolf_2'));
 function nav(param1) {
   switch (true) {
     case param1 === 'wolf_1':
-      log('1')
+   
       wolfgang.innerHTML = null;
       wolfgang.innerHTML = wolf1();
       break;
     case param1 === 'wolf_2':
-    log('2')
+ 
       wolfgang.innerHTML = null;
       wolfgang.innerHTML = wolf2();
       break;
