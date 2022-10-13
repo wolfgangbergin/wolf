@@ -25,20 +25,7 @@ export function wolf2(){
    
  Timber wolves and coyotes used as draught animals in northern Ontario, 1923.
  
-  <p>
-  <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/84/The-Wolf-and-his-Master.jpg/220px-The-Wolf-and-his-Master.jpg" decoding="async" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/8/84/The-Wolf-and-his-Master.jpg 1.5x" data-file-width="328" data-file-height="475" width="220" height="319">
 
-  <h1>Rearing</h1>
-       <hr>
-       <p>Captive wolf puppies are usually taken from their mother at the age of 
-       14 days, preferably no later than 21 days. Wolf pups require more socialisation than dog pups, 
-       and will typically stop responding to socialisation at the age of 19 days, as opposed to dogs which can
-        still be socialised at the age of 16 weeks. For the first four months of their lives, wolf pups need to 
-        be kept isolated from adult canines, except for a few brief visits per week, in order for them to properly 
-        imprint on humans. Pups will typically develop behavioural abnormalities if raised without another
-         member of their own kind. Because wolf milk contains more arginine than can be found in puppy
-          milk substitutes, an arginine supplement is needed when 
-       feeding pups below the weaning age. Failure to do so can result in the pups developing cataracts.</p> 
     
  
     `
