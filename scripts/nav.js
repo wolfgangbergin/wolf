@@ -45,5 +45,18 @@ for (const El of WOLFMAN5) {
 const WOLFMAN6 = document.querySelector('.wolfMan:nth-child(3)');
 
 WOLFMAN6.style.fontSize = '4rem';
-const WOLFMAN7 = document.querySelector('.wolfMan:nth-child(3):hover');
-WOLFMAN7.style.color = 'blue';
+
+
+let hover = document.querySelectorAll('#kim313');
+
+for (let elem of hover) {
+  elem.addEventListener('mouseenter', () => {
+    elem.style.backgroundColor = 'green'
+  })
+  elem.addEventListener('mouseleave', () => {
+    elem.style.backgroundColor = 'blue'
+  })
+};
+
+
+
