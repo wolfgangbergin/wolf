@@ -32,7 +32,7 @@ export function wolf1(){
     `
      return wolf
 
-    return nfl
+  
     
 
 }
