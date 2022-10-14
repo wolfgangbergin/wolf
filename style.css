@@ -94,9 +94,9 @@
 }
 body{
   /* min-height: auto;  */
+  border: red 5px dotted;
   background:pink;
-  /* background-image: url(./wolf.jpg);
-  background-size:23vw; */
+ height: 400px;
 }
 .content {
   /* border: red 3px dotted; */
@@ -106,6 +106,7 @@ body{
  /* min-height: 100vh;  */
  background-image: url(./wolf.jpg);
  background-size:23vw;
+ height: auto;
 }
 
 p{
