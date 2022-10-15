@@ -38,13 +38,13 @@ const WOLFMAN3 = document.querySelector('#wolfgang p:first-of-type ');
 WOLFMAN3.style.margin = ' auto  ';
 const WOLFMAN4 = document.querySelector('hr.wolfMan ~ p');
 WOLFMAN4.style.maxWidth = '300px';
-const WOLFMAN5 = document.querySelectorAll('hr.wolfMan + p');
-for (const El of WOLFMAN5) {
-  El.innerHTML = 'wolfgang bergin';
-}
+const WOLFMAN5 = document.querySelector('#kim313');
+
+  WOLFMAN5.innerHTML = 'kim313';
+
 const WOLFMAN6 = document.querySelector('.wolfMan:nth-child(3)');
 
-WOLFMAN6.style.fontSize = '4rem';
+WOLFMAN6.style.fontSize = '2rem';
 
 
 let hover = document.querySelectorAll('#kim313');
