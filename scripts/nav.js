@@ -40,7 +40,7 @@ const WOLFMAN4 = document.querySelector('hr.wolfMan ~ p');
 WOLFMAN4.style.maxWidth = '300px';
 const WOLFMAN5 = document.querySelectorAll('hr.wolfMan + p');
 for (const El of WOLFMAN5) {
-  El.innerHTML = 'wolfgang bergin';
+  El.innerHTML = 'jobob';
 }
 const WOLFMAN6 = document.querySelector('.wolfMan:nth-child(3)');
 
