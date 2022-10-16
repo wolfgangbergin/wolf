@@ -9,11 +9,58 @@ let wolf_2 = document.getElementById('wolf_2');
 wolf_1.addEventListener('click', () => nav('wolf_1'));
 wolf_2.addEventListener('click', () => nav('wolf_2'));
 
+function toolTip() {
+  let master = document.querySelector('#master');
+
+  master.style.width = '300px';
+  master.style.height = '400px';
+  master.style.backgroundImage = 'url("master.jpg")';
+  master.style.backgroundSize = 'cover';
+  master.style.backgroundPosition = 'center';
+  master.style.position = 'relative';
+
+  //--------------------------
+  const TOOLTIP = document.createElement('div');
+  let arrow = document.createElement('div');
+  arrow.innerHTML = 'wolf'
+  arrow.style.width = '100px'
+  arrow.style.height = '100px'
+ 
+
+  TOOLTIP.innerHTML = master.dataset.popup;
+  TOOLTIP.style.background = '#333';
+  TOOLTIP.style.position = 'absolute';
+  TOOLTIP.style.top = '-10%';
+  TOOLTIP.style.left = '50%';
+  TOOLTIP.style.padding = '.5rem';
+  TOOLTIP.style.color = 'red';
+  TOOLTIP.style.width = 'max-content';
+  TOOLTIP.style.maxWidth = '100%';
+  TOOLTIP.style.borderRadius = '.3rem';
+  TOOLTIP.style.textAlign = 'center';
+  master.append(TOOLTIP);
+  TOOLTIP.style.transform = 'translateX(-50%) translateY(0) scale(0)';
+  TOOLTIP.style.transformOrigin = 'bottom center';
+  TOOLTIP.style.transition = '1000ms transform';
+
+  master.addEventListener('mouseover', () => {
+    TOOLTIP.style.transform = 'translateX(-50%) translateY(-100%) scale(1)';
+    TOOLTIP.style.transition = '1000ms transform';
+     TOOLTIP.insertAdjacentElement('afterbegin', arrow)
+  });
+  master.addEventListener('mouseout', () => {
+    TOOLTIP.style.transform = 'translateX(-50%) translateY(0) scale(0)';
+    TOOLTIP.style.transition = '1000ms transform';
+  });
+}
+
 function nav(param1) {
   switch (true) {
     case param1 === 'wolf_1':
       wolfgang.innerHTML = null;
       wolfgang.innerHTML = wolf1();
+      toolTip();
+
       break;
     case param1 === 'wolf_2':
       wolfgang.innerHTML = null;
@@ -24,39 +71,3 @@ function nav(param1) {
   }
 }
 nav('wolf_1');
-
-const WOLFMAN1 = document.querySelector('#kim313');
-WOLFMAN1.style.backgroundColor = 'red';
-const WOLFMAN2 = document.querySelectorAll('.wolfMan');
-
-for (const El of WOLFMAN2) {
-  El.style.color = 'white';
-}
-
-const WOLFMAN3 = document.querySelector('#wolfgang p:first-of-type ');
-
-WOLFMAN3.style.margin = ' auto  ';
-const WOLFMAN4 = document.querySelector('hr.wolfMan ~ p');
-WOLFMAN4.style.maxWidth = '300px';
-const WOLFMAN5 = document.querySelectorAll('hr.wolfMan + p');
-for (const El of WOLFMAN5) {
-  El.innerHTML = 'jobob';
-}
-const WOLFMAN6 = document.querySelector('.wolfMan:nth-child(3)');
-
-WOLFMAN6.style.fontSize = '4rem';
-
-
-let hover = document.querySelectorAll('#kim313');
-
-for (let elem of hover) {
-  elem.addEventListener('mouseenter', () => {
-    elem.style.backgroundColor = 'green'
-  })
-  elem.addEventListener('mouseleave', () => {
-    elem.style.backgroundColor = 'blue'
-  })
-};
-
-
-

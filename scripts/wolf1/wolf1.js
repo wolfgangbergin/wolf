@@ -1,4 +1,7 @@
 export function wolf1(){
+
+
+   
    let wolf = `
  
  
@@ -9,7 +12,7 @@ export function wolf1(){
 
   
  <hr class='wolfMan'>
- <p id='kim313' class='wolfMan'>Wolves are sometimes kept as exotic pets,
+ <p  class='wolfMan' >Wolves are sometimes kept as exotic pets,
   and in some rarer occasions, as working animals. 
   Although closely related to domesticated dogs, wolves
   do not show the same tractability as dogs in living alongside 
@@ -17,8 +20,8 @@ export function wolf1(){
   to obtain the same amount of reliability. Wolves also need much more space than dogs,
   about 25 to 40 square kilometres (10 to 15 sq mi) so they can exercise.</p>
   <p> 
-  <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/84/The-Wolf-and-his-Master.jpg/220px-The-Wolf-and-his-Master.jpg" decoding="async" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/8/84/The-Wolf-and-his-Master.jpg 1.5x" data-file-width="328" data-file-height="475" width="220" height="319">
- 
+  <div id='master' data-popup="The wolf and his master." ></div>
+  
   <h1>Rearing</h1>
        <hr>
        <p>Captive wolf puppies are usually taken from their mother at the age of 
@@ -33,6 +36,9 @@ export function wolf1(){
   
  
     `
+
+    
+
      return wolf
 
     
