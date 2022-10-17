@@ -2,7 +2,7 @@ import { wolf1 } from './wolf1/wolf1.js';
 import { wolf2 } from './wolf2/wolf2.js';
 import { wolf3 } from './wolf3/wolf3.js';
 
-import { toolTip } from './tooltip/tooTip.js';
+// import { toolTip } from './tooltip/tooTip.js';
 
 let wolf_1 = document.getElementById('wolf_1');
 let wolf_2 = document.getElementById('wolf_2');
@@ -22,7 +22,7 @@ function nav(param1) {
 
       wolfgang.innerHTML = null;
       wolfgang.insertAdjacentElement('beforeend', wolf1());
-      toolTip();
+      // toolTip();
 
       break;
     case param1 === 'wolf_2':
@@ -41,14 +41,14 @@ function nav(param1) {
 
 nav('wolf_3');
 
-let kimTest1 =
-  document.children[0].children[1].children[0].children[3].children[0].childNodes;
+// let kimTest1 =
+//   document.children[0].children[1].children[0].children[3].children[0].childNodes;
 
-    log(kimTest1)
+//     log(kimTest1)
     
-    let kimTest2 =
-      document.children[0].children[1].children[0].children[3].children[0]
+//     let kimTest2 =
+//       document.children[0].children[1].children[0].children[3].children[0]
     
-        log(kimTest2.style.whiteSpace = 'pre')
+//         log(kimTest2.style.whiteSpace = 'pre')
 
    
