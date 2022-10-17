@@ -40,7 +40,7 @@ function nav(param1) {
   }
 }
 
-nav('wolf_1');
+nav('wolf_3');
 
 // let kimTest1 =
 //   document.children[0].children[1].children[0].children[3].children[0].childNodes;
@@ -52,4 +52,5 @@ nav('wolf_1');
     
 //         log(kimTest2.style.whiteSpace = 'pre')
 
-   
+   let wolfList = document.querySelector('#wolfList')
+wolfList.style.whiteSpace = 'pre'

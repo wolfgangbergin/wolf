@@ -6,7 +6,7 @@ export function wolf3(){
      
         <header><h1 id="main-title">Dive into the DOM!</h1></header>
         <section>
-          <ul>
+          <ul id='wolfList'>
             <li class="list-item">Item 1</li>
             <li class="list-item">Item 2</li>
             <li class="list-item">Item 3</li>
