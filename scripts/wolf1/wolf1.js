@@ -1,8 +1,8 @@
 export function wolf1(){
 
-
+let wolf = document.createElement('div')
    
-   let wolf = `
+    wolf.innerHTML = `
  
  
 

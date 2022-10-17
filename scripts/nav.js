@@ -19,16 +19,24 @@ function toolTip() {
   master.style.backgroundPosition = 'center';
   master.style.position = 'relative';
 
-  //--------------------------
+  
+const TOOLTIPCOLOR = '#333'
+
   const TOOLTIP = document.createElement('div');
   let arrow = document.createElement('div');
-  arrow.innerHTML = 'wolf'
-  arrow.style.width = '100px'
-  arrow.style.height = '100px'
+  
+ 
+  arrow.style.border = '30px solid transparent'
+  arrow.style.borderTopColor = TOOLTIPCOLOR
+  arrow.style.width = '30px'
+  arrow.style.position = 'absolute'
+  arrow.style.top = '100%'
+  arrow.style.left = '35%'
+
  
 
   TOOLTIP.innerHTML = master.dataset.popup;
-  TOOLTIP.style.background = '#333';
+  TOOLTIP.style.background = TOOLTIPCOLOR;
   TOOLTIP.style.position = 'absolute';
   TOOLTIP.style.top = '-10%';
   TOOLTIP.style.left = '50%';
@@ -44,9 +52,9 @@ function toolTip() {
   TOOLTIP.style.transition = '1000ms transform';
 
   master.addEventListener('mouseover', () => {
-    TOOLTIP.style.transform = 'translateX(-50%) translateY(-100%) scale(1)';
+    TOOLTIP.style.transform = 'translateX(-50%) translateY(-70%) scale(1)';
     TOOLTIP.style.transition = '1000ms transform';
-     TOOLTIP.insertAdjacentElement('afterbegin', arrow)
+     TOOLTIP.insertAdjacentElement('beforeend', arrow)
   });
   master.addEventListener('mouseout', () => {
     TOOLTIP.style.transform = 'translateX(-50%) translateY(0) scale(0)';
@@ -58,7 +66,7 @@ function nav(param1) {
   switch (true) {
     case param1 === 'wolf_1':
       wolfgang.innerHTML = null;
-      wolfgang.innerHTML = wolf1();
+      wolfgang.insertAdjacentElement('beforeend', wolf1()) 
       toolTip();
 
       break;
@@ -70,4 +78,5 @@ function nav(param1) {
       log('default');
   }
 }
+
 nav('wolf_1');
