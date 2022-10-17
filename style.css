@@ -8,7 +8,7 @@
 
 }
 :root {
-  --background1: rgba(255, 255, 255, 1);
+  --background1: rgba(255, 255, 255, .5);
   --background2: rgba(255, 255, 255, 0);
 }
 .header {
@@ -88,15 +88,15 @@
 .wolfgang{
  
   position:relative;
- 
-  top: 4rem;
+ padding-top: 4rem;
   text-align: center;
 }
 body{
   /* min-height: auto;  */
+
   background:pink;
   background-image: url(./wolf.jpg);
-  background-size:23vw;
+ background-size:23vw;
 }
 .content {
   /* border: red 3px dotted; */
@@ -104,14 +104,19 @@ body{
   /* display: block;  */
 
  /* min-height: 100vh;  */
- /* background-image: url(./wolf.jpg);
- background-size:23vw; */
+
+ 
 }
 
 p{
   font-size: 1rem;
   padding: 1rem;
 }
+
+/* #kim313::before{
+  content: attr(data-tooltip) ;
+} */
+
 
 
 /* --------------------------------------------------- */
