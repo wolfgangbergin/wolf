@@ -23,6 +23,14 @@ function nav(param1) {
       wolfgang.innerHTML = null;
       wolfgang.insertAdjacentElement('beforeend', wolf1());
     //  toolTip();
+    let master = document.querySelector('#master');
+  
+    master.style.width = '300px';
+    master.style.height = '400px';
+    master.style.backgroundImage = 'url("master.jpg")';
+    master.style.backgroundSize = 'cover';
+    master.style.backgroundPosition = 'center';
+    master.style.position = 'relative';
 
       break;
     case param1 === 'wolf_2':
