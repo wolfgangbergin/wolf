@@ -2,7 +2,7 @@ import { wolf1 } from './wolf1/wolf1.js';
 import { wolf2 } from './wolf2/wolf2.js';
 import { wolf3 } from './wolf3/wolf3.js';
 
- import { toolTip } from './tooltip/tooTip.js';
+ import { toolTip } from './tooltip/tooltip.js';
 
 let wolf_1 = document.getElementById('wolf_1');
 let wolf_2 = document.getElementById('wolf_2');
@@ -22,15 +22,8 @@ function nav(param1) {
 
       wolfgang.innerHTML = null;
       wolfgang.insertAdjacentElement('beforeend', wolf1());
-    //  toolTip();
-    let master = document.querySelector('#master');
-  
-    master.style.width = '300px';
-    master.style.height = '400px';
-    master.style.backgroundImage = 'url("master.jpg")';
-    master.style.backgroundSize = 'cover';
-    master.style.backgroundPosition = 'center';
-    master.style.position = 'relative';
+      toolTip();
+    
 
       break;
     case param1 === 'wolf_2':
@@ -47,7 +40,7 @@ function nav(param1) {
   }
 }
 
-nav('wolf_3');
+nav('wolf_1');
 
 // let kimTest1 =
 //   document.children[0].children[1].children[0].children[3].children[0].childNodes;
