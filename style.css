@@ -83,7 +83,7 @@
   top: 25px;
 }
 .navButton {
- 
+  border: red 3px ;
   color: blue;
 }
 .wolfgang{
@@ -96,8 +96,8 @@ body{
   /* min-height: auto;  */
 
   background:pink;
-  background-image: url(./wolf.jpg);
- background-size:23vw;
+  background-image: url(./lopez.jpg);
+ background-size:53vw;
 }
 .content {
   /* border: red 3px dotted; */

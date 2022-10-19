@@ -19,7 +19,7 @@ export function wolf1(){
      humans, and generally, a greater amount of effort is required in order 
      to obtain the same amount of reliability. Wolves also need much more space than dogs,
      about 25 to 40 square kilometres (10 to 15 sq mi) so they can exercise.</p>
-     <p> 
+     <hr>
      <div id='master' data-popup="The wolf and his master." ></div>
      
      <h1>Rearing</h1>

@@ -2,7 +2,7 @@ import { wolf1 } from './wolf1/wolf1.js';
 import { wolf2 } from './wolf2/wolf2.js';
 import { wolf3 } from './wolf3/wolf3.js';
 
- import { toolTip } from './tooltip/tooltip.js';
+import { toolTip } from './tooltip/tooltip.js';
 
 let wolf_1 = document.getElementById('wolf_1');
 let wolf_2 = document.getElementById('wolf_2');
@@ -15,42 +15,55 @@ wolf_3.addEventListener('click', () => nav('wolf_3'));
 let content = document.getElementById('content');
 let wolfgang = document.getElementById('wolfgang');
 
-
 function nav(param1) {
   switch (true) {
     case param1 === 'wolf_1':
-
       wolfgang.innerHTML = null;
       wolfgang.insertAdjacentElement('beforeend', wolf1());
       toolTip();
-    
 
       break;
     case param1 === 'wolf_2':
       wolfgang.innerHTML = null;
       wolfgang.innerHTML = wolf2();
       break;
-      case param1 === 'wolf_3':
-     
-        wolfgang.innerHTML = null;
-        wolfgang.insertAdjacentElement('beforeend', wolf3());
-        break;
+    case param1 === 'wolf_3':
+      wolfgang.innerHTML = null;
+      wolfgang.insertAdjacentElement('beforeend', wolf3());
+      break;
     default:
       log('default');
   }
 }
 
-nav('wolf_3');
-
+nav('wolf_1');
+const testStyle = "background-color: aqua; border: red 3px solid  "
 // let kimTest1 =
 //   document.children[0].children[1].children[0].children[3].children[0].childNodes;
 
 //     log(kimTest1)
-    
+
 //     let kimTest2 =
 //       document.children[0].children[1].children[0].children[3].children[0]
-    
+
 //         log(kimTest2.style.whiteSpace = 'pre')
 
-   let wolfList = document.querySelector('#wolfList')
-wolfList.style.whiteSpace = 'pre'
+//    let wolfTest1 = document.querySelector('.nav-list').children[1].childNodes[0]
+// wolfTest1.style.border = 'red 3px solid';
+
+// log(wolfTest1.childNodes[0].textContent = 'kim2');
+
+//    let wolfTest2 = document.querySelector('.nav-list ').lastElementChild
+// wolfTest2.style.border = 'yellow 3px solid';
+
+// log(wolfTest2);
+
+ let wolfTest3 = document.querySelector('.nav').style = testStyle;
+
+
+let wolfTest4 =
+  document.body.firstElementChild.lastElementChild.firstElementChild
+    .lastElementChild.previousElementSibling.parentElement.parentElement
+    .previousElementSibling.previousElementSibling.previousElementSibling.style = testStyle; 
+
+log(wolfTest4);
