@@ -38,25 +38,7 @@ function nav(param1) {
 
 nav('wolf_1');
 const testStyle = "background-color: aqua; border: red 3px solid  "
-// let kimTest1 =
-//   document.children[0].children[1].children[0].children[3].children[0].childNodes;
 
-//     log(kimTest1)
-
-//     let kimTest2 =
-//       document.children[0].children[1].children[0].children[3].children[0]
-
-//         log(kimTest2.style.whiteSpace = 'pre')
-
-//    let wolfTest1 = document.querySelector('.nav-list').children[1].childNodes[0]
-// wolfTest1.style.border = 'red 3px solid';
-
-// log(wolfTest1.childNodes[0].textContent = 'kim2');
-
-//    let wolfTest2 = document.querySelector('.nav-list ').lastElementChild
-// wolfTest2.style.border = 'yellow 3px solid';
-
-// log(wolfTest2);
 
  let wolfTest3 = document.querySelector('.nav').style = testStyle;
 

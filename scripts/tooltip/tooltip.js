@@ -1,13 +1,16 @@
+const master = "master.jpg"
+const testStyle =   ` width :300px;
+height :400px;
+background-color: pink;
+background-image :url(${master});
+background-size :cover;
+background-position :center;
+position :relative;`
 
 export function toolTip() {
     let master = document.querySelector('#master');
   
-    master.style.width = '300px';
-    master.style.height = '400px';
-    master.style.backgroundImage = 'url("master.jpg")';
-    master.style.backgroundSize = 'cover';
-    master.style.backgroundPosition = 'center';
-    master.style.position = 'relative';
+    master.style = testStyle
   
     
   const TOOLTIPCOLOR = '#333'
