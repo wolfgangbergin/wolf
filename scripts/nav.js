@@ -37,15 +37,22 @@ function nav(param1) {
 }
 
 nav('wolf_1');
-const testStyle = "background-color: aqua; border: red 3px solid  "
+const border = ` red 3px solid`;
 
 
- let wolfTest3 = document.querySelector('.nav').style = testStyle;
+const testDiv1 = document.querySelectorAll('.banana');
+
+for (const El of testDiv1) {
+  El.style.border = border;
+}
+const testDiv2 = document.querySelectorAll('.testDiv');
+log(testDiv2);
+for (const El of testDiv2) {
+
+  El.style.color = `blue`;
+}
+
+const testDiv3 = document.querySelector('.kim').style.background = 'green';
+log(testDiv3);
 
 
-let wolfTest4 =
-  document.body.firstElementChild.lastElementChild.firstElementChild
-    .lastElementChild.previousElementSibling.parentElement.parentElement
-    .previousElementSibling.previousElementSibling.previousElementSibling.style = testStyle; 
-
-log(wolfTest4);
