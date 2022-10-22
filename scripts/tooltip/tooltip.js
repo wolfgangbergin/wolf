@@ -13,12 +13,11 @@ export function toolTip() {
     TOOLTIP.innerHTML = master.dataset.popup;
     master.append(TOOLTIP);
     master.addEventListener('mouseover', () => {
-      TOOLTIP.style.transform = 'translateX(-50%) translateY(-70%) scale(1)';
-      TOOLTIP.style.transition = '1000ms transform';
+      TOOLTIP.classList.add('wolfTestA')
        TOOLTIP.insertAdjacentElement('beforeend', arrow)
     });
     master.addEventListener('mouseout', () => {
-      TOOLTIP.style.transform = 'translateX(-50%) translateY(0) scale(0)';
-      TOOLTIP.style.transition = '1000ms transform';
+      TOOLTIP.classList.remove('wolfTestA')
+    
     });
   }

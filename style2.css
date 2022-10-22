@@ -29,6 +29,12 @@
   transform-origin: bottom center;
   transition: 1000ms transform;
 }
+
+.wolfTestA{
+  transform: translateX(-50%) translateY(-70%) scale(1);
+      transition: 1000ms transform;
+} 
+
 /* ______________________________ */
 .master::before,
 .master::after {
