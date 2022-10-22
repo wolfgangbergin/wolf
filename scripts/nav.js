@@ -37,22 +37,7 @@ function nav(param1) {
 }
 
 nav('wolf_1');
-const border = ` red 3px solid`;
 
 
-const testDiv1 = document.querySelectorAll('.banana');
-
-for (const El of testDiv1) {
-  El.style.border = border;
-}
-const testDiv2 = document.querySelectorAll('.testDiv');
-log(testDiv2);
-for (const El of testDiv2) {
-
-  El.style.color = `blue`;
-}
-
-const testDiv3 = document.querySelector('.kim').style.background = 'green';
-log(testDiv3);
 
 

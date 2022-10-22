@@ -9,17 +9,14 @@ export function wolf1(){
     
        
    <h1 class='wolfMan' >Wolves as pets and working animals</h1>
+   <p  class='wolfMan' >Wolves are sometimes kept as exotic pets,
+   and in some rarer occasions, as working animals. 
+   Although closely related to domesticated dogs, wolves
+   do not show the same tractability as dogs in living alongside 
+   humans, and generally, a greater amount of effort is required in order 
+   to obtain the same amount of reliability. Wolves also need much more space than dogs,
+   about 25 to 40 square kilometres (10 to 15 sq mi) so they can exercise.</p>
    
-     <div class='testDiv banana' >
-     <div  class='testDiv banana'>wolf</div>
-     <div  class='testDiv banana kim'>wolf</div>
-    <p  class='wolfMan' >Wolves are sometimes kept as exotic pets,
-     and in some rarer occasions, as working animals. 
-     Although closely related to domesticated dogs, wolves
-     do not show the same tractability as dogs in living alongside 
-     humans, and generally, a greater amount of effort is required in order 
-     to obtain the same amount of reliability. Wolves also need much more space than dogs,
-     about 25 to 40 square kilometres (10 to 15 sq mi) so they can exercise.</p>
    
      <div id='master' data-popup="The wolf and his master." ></div>
      </div>
@@ -48,3 +45,4 @@ export function wolf1(){
    }
    
 
+  

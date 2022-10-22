@@ -10,6 +10,8 @@
 :root {
   --background1: rgba(255, 255, 255, .5);
   --background2: rgba(255, 255, 255, 0);
+  --background3:#333 ;
+
 }
 .header {
   z-index: 999;
@@ -99,26 +101,6 @@ body{
   background-image: url(./lopez.jpg);
  background-size:53vw;
 }
-.content {
-  /* border: red 3px dotted; */
-  /* position: static; */
-  /* display: block;  */
-
- /* min-height: 100vh;  */
-
- 
-}
-
-p{
-  font-size: 1rem;
-  padding: 1rem;
-}
-
-/* #kim313::before{
-  content: attr(data-tooltip) ;
-} */
-
-
 
 /* --------------------------------------------------- */
 
