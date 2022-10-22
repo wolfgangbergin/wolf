@@ -37,12 +37,13 @@
 
   position: absolute;
   right:-.25rem;
-  top: 50%;
-  transform: translateY(50%) translateX(var(  --translate-x, 0)) scale(var(--scale));
+  
+  transform: translateX(var(  --translate-x, 0)) scale(var(--scale));
   transition: 1000ms transform ;
   transform-origin:  left;
 }
 .master::before {
+  --translate-x: calc(100% + var(--wolf-arrow-size));
   content: attr(data-popup);
  color: #ffffff;
  padding: .5rem;
@@ -58,7 +59,10 @@
   --scale: 1;
 }
 .master::after{
+  --translate-x: calc(+1 * var(--wolf-arrow-size));
   content: '';
   border: var(--wolf-arrow-size) solid transparent;
-  border-right-color: red;
+  border-right-color: var(--background3);
+  transform-origin: right;
+  top: 6.5%;
 }
