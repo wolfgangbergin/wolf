@@ -29,7 +29,7 @@
   transform-origin: bottom center;
   transition: 1000ms transform;
 }
-
+/* ______________________________ */
 .master::before,
 .master::after {
   --wolf-arrow-size: 20px;
