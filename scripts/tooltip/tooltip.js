@@ -2,7 +2,7 @@
 
 export function toolTip() {
     let master = document.querySelector('#master');
-    master.classList.add('wolfPic')
+    master.classList.add('master')
 
     const TOOLTIP = document.createElement('div');
     let arrow = document.createElement('div');
