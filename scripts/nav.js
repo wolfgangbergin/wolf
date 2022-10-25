@@ -36,8 +36,33 @@ function nav(param1) {
   }
 }
 
-nav('wolf_1');
+nav('wolf_3');
+//_________________________________
+let kim1 = ' kim1'
+const SECTION = document.querySelector('#section');
+SECTION.classList = 'burlywood';
+const UL = SECTION.children[0];
+UL.classList = 'greenBorder';
+const LI1 = UL.children[0];
+LI1.classList = 'blueBorder';
+const LI2 = LI1.nextElementSibling;
+LI2.classList = 'redBackground';
+
+const LI3 = LI2.nextElementSibling;
+LI3.classList = 'yellowBorder';
+
+//__________________________ don't erase!!!
+const BUTTON = document.querySelector('#button');
+let wrong = document.createElement('p')
+wrong.innerText = `somthing went wrong`
+let wolfMan = () => {
 
 
+ SECTION.insertAdjacentElement('beforeend', wrong)
+ 
+};
 
+BUTTON.addEventListener('click', wolfMan);
+//__________________________don't erase!!!
 
+wolfMan()

@@ -13,11 +13,12 @@ export function toolTip() {
     TOOLTIP.innerHTML = master.dataset.popup;
     master.append(TOOLTIP);
     master.addEventListener('mouseover', () => {
-      TOOLTIP.classList.add('wolfTestA')
+      TOOLTIP.classList.toggle('wolfTestA')
        TOOLTIP.insertAdjacentElement('beforeend', arrow)
     });
     master.addEventListener('mouseout', () => {
-      TOOLTIP.classList.remove('wolfTestA')
+      TOOLTIP.classList.toggle('wolfTestA')
+      
     
     });
   }

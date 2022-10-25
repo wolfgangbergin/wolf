@@ -4,6 +4,8 @@
   position: relative;
   background: #ffffff url('master.jpg') no-repeat center;
   background-size: cover;
+  float:right;
+ 
 }
 .arrow {
   border: 30px solid transparent;
@@ -20,7 +22,7 @@
   top: -10%;
   left: 50%;
   padding: 0.5rem;
-  color: red;
+  color: #ffffff;
   width: max-content;
   max-width: 100%;
   border-radius: 0.3rem;
@@ -35,40 +37,28 @@
       transition: 1000ms transform;
 } 
 
-/* ______________________________ */
-.master::before,
-.master::after {
-  --wolf-arrow-size: 20px;
-  --scale: 0;
 
-  position: absolute;
-  right:-.25rem;
-  
-  transform: translateX(var(  --translate-x, 0)) scale(var(--scale));
-  transition: 1000ms transform ;
-  transform-origin:  left;
-}
-.master::before {
-  --translate-x: calc(100% + var(--wolf-arrow-size));
-  content: attr(data-popup);
- color: #ffffff;
- padding: .5rem;
- height:  max-content;
- width: 90px;
- max-width: 100%;
- background: var(--background3);
- border-radius: .3rem;
+.margin{
+  margin: 1rem;
+
 }
 
-.master:hover::before,
-.master:hover::after{
-  --scale: 1;
+.burlywood{
+  background-color: burlywood;
 }
-.master::after{
-  --translate-x: calc(+1 * var(--wolf-arrow-size));
-  content: '';
-  border: var(--wolf-arrow-size) solid transparent;
-  border-right-color: var(--background3);
-  transform-origin: right;
-  top: 6.5%;
+.greenBorder{
+  border: green 3px dotted;
+
+}
+.blueBorder{
+  border: blue 3px solid;
+}
+.yellowBorder{
+  border: yellow 3px dotted;
+}
+.redBackground{
+  background-color: red;
+}
+.pinkBackground{
+  background-color: pink;
 }
