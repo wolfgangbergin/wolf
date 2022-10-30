@@ -47,7 +47,7 @@
   background-color: burlywood;
 }
 .greenBorder{
-  border: green 3px dotted;
+  border: green 3px dashed;
 
 }
 .blueBorder{
@@ -62,3 +62,20 @@
 .pinkBackground{
   background-color: pink;
 }
+.blueBackground{
+  background: blue;
+}
+.yellowBackground{
+  background: yellow;
+}
+.blackBackground{
+  background: black;
+  color: #ffffff;
+}
+.whiteBorder{
+  border: #ffffff 3px dashed;
+}
+.redBorder{
+  border: red 3px dashed;
+}
+

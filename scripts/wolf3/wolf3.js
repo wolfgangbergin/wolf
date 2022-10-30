@@ -1,38 +1,39 @@
 export function wolf3(){
 
-    let wolf = document.createElement('div')
-       
-        wolf.innerHTML = `
+  let wolf = document.createElement('div')
      
-        <header id='header'>
-        <h1 id="h1">Dive into the DOM!</h1>
-        </header>
+      wolf.innerHTML = `
+   
+      <header id='header'>
+      <h1 id="h1">Dive into the DOM!</h1>
+      </header>
 
-        <section id='section'>
-          <ul id='ul' >
-            <input  id='input' type="text" value="default text" />
-            <li id='li1'class="list-item">Item 1</li>
-            <li id='li2' class="list-item">Item 2</li>
-            
-            <li  id='li3' class="list-item">Item 3</li>
-          </ul>
-        </section>
+      <section id='section'>
+        <ul id='ul' >
+        
+          <li id='item1'class="list-item">Item 1</li>
+          <li id='item2' class="list-item">Item 2</li>
+          
+          <li  id='item3' class="list-item">Item 3</li>
+          <input  id='input1' type="text" value="input1" />
+        </ul>
+      </section>
 
-        <button id='button'>test</button>
-    <div id='div'>
+      <button id='button'>test</button>
+  <div id='div'>
+
+  </div>
+     
+    
+   
+      `
   
-    </div>
-       
       
-     
-        `
-    
-        
-    
-         return wolf
-    
-        
-        
-    
-    }
-    
+  
+       return wolf
+  
+      
+      
+  
+  }
+  
