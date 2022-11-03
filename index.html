@@ -19,10 +19,10 @@
   <script>
     globalThis.log = console.log;
     globalThis.dir = console.dir;
-    Object.prototype.wolf = function () { dir(this) }
-    function wolfTest313() {
-      log('wolfTest313')
-    };
+    // Object.prototype.wolf = function () { dir(this) }
+    // function wolfTest313() {
+    //   log('wolfTest313')
+    // };
 
 
 
@@ -37,22 +37,25 @@
   <header class="header">
 
 
-    <h1 class="logo">WOLF</h1>
+    <h1 id="banana" class="logo">WOLF</h1>
 
     <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
     <label for="nav-checkbox" class="label">
       <span class="nav-span"></span>
     </label>
     <div class="nav">
-      <ul class="nav-list">
+      <ul class="nav-list" name="banana">
 
 
 
         <li><span class="navButton" id="wolf_1">wolf1</span></li>
+       
 
         <li><span class="navButton" id="wolf_2">wolf2</span></li>
         <li><span class="navButton" id="wolf_3">wolf3</span></li>
         <li><span class="navButton" id="wolf_4">wolf4</span></li>
+        <li><span class="navButton" id="log_1">log1</span></li>
+        <li><span class="navButton" id="log_2">log2</span></li>
 
 
       </ul>
@@ -60,8 +63,8 @@
     </div>
 
   </header>
- 
-     
+
+
 
 
 

@@ -1,39 +1,36 @@
+
+
+
+
 export function wolf3(){
+  console.clear()
+   let wolf3 = document.createElement('div')
+wolf3.innerHTML = `<p>wolf3</p>`
+wolf3.classList.add(`greenBackground`)
+let temp = 10
+++temp
+++temp
+++temp
+++temp
 
-  let wolf = document.createElement('div')
-     
-      wolf.innerHTML = `
-   
-      <header id='header'>
-      <h1 id="h1">Dive into the DOM!</h1>
-      </header>
+{
 
-      <section id='section'>
-        <ul id='ul' >
-        
-          <li id='item1'class="list-item">Item 1</li>
-          <li id='item2' class="list-item">Item 2</li>
-          
-          <li  id='item3' class="list-item">Item 3</li>
-          <input  id='input1' type="text" value="input1" />
-        </ul>
-      </section>
+  
+  let four = temp
+  
+  
+  var  wolfTest = function(){
+  return four + 1
 
-      <button id='button'>test</button>
-  <div id='div'>
+}
+}
 
-  </div>
-     
-    
-   
-      `
-  
-      
-  
-       return wolf
-  
-      
-      
-  
-  }
-  
+let kimTest = wolfTest
+
+log(kimTest())
+
+
+
+return wolf3
+
+}
