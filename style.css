@@ -132,7 +132,7 @@ body{
 
     position: relative;
   }
-  .nav-list {
+  .nav_list {
     display: flex;
     justify-content: flex-end;
     align-items: center;

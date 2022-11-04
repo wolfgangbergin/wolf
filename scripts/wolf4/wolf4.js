@@ -8,9 +8,9 @@ button1.addEventListener('click', testWolf)
 button1.innerText = 'testWolf'
 
 let myArry = [`item1`, `item2`, `item3`]
-let myCss = [`greenBackground`,`blueBackground`, `greenBackground`]
-let UL = document.createElement('ul');
-UL.id = `UL`;
+let myCss = [`greenBackground`,`blueBackground`, `pinkBackground`]
+let ul = document.createElement('ul');
+ul.id = `ul`;
 
 
 for(var i = 0; i < myArry.length; ++i ){
@@ -20,15 +20,17 @@ for(var i = 0; i < myArry.length; ++i ){
 
     li.id = `${myArry[i]}`;
     li.innerText = `${myArry[i]}`;
-    UL.append(li);
+    ul.append(li);
    
   
 }
 
 
 const h1 = document.createElement('h1');
+h1.id = 'attribute919'
 h1.innerText = `Dive into the DOM!`;
 const input1 = document.createElement(`input`);
+
 input1.id = `input1`;
 let header = document.createElement('header');
 header.id = 'header';
@@ -36,14 +38,19 @@ header.append(h1, input1);
 let section = document.createElement('section');
 section.classList.add(`whiteBorder`);
 section.id = 'section';
-section.prepend(UL);
+section.prepend(ul);
 
 let link = document.createElement('p')
-link.innerHTML = '<a href="#news1">Jump to New content 1</a>'
+link.innerHTML = '<a id="kimbo212" >Jump to New content 1</a>'
 
-let news = document.createElement('p')
-news.id = 'news1'
-news.innerHTML = '<b>WolfMAnNew content 1...</b>'
+let news1 = document.createElement('p')
+news1.id = 'news1'
+
+news1.innerHTML = '<b target="_blank"   href="#news1">News1</b>'
+
+let joBob = document.createElement('div')
+joBob.id = 'joBob'
+joBob.innerText = 'joBob'
 
 export let wolf4 = document.createElement('div');
 wolf4.id = `wolf4`;
@@ -51,7 +58,7 @@ wolf4.classList.add(`redBorder`);
 
 
 
-wolf4.append(link,header, section, button1, news );
+wolf4.append(link,header, section, button1, news1, joBob );
 
 
 
