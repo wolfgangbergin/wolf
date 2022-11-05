@@ -1,8 +1,11 @@
+let michigan = () => {
+    input1.focus();
+  };
 
-
-let button1 = document.createElement('button')
-button1.id = `button1`
-
+  let button1 = document.createElement('button')
+  button1.id = `button1`
+  
+  button1.addEventListener('click', michigan);
 button1.innerText = 'testWolf'
 
 let myArry = [`item1`, `item2`, `item3`]
@@ -25,7 +28,7 @@ for(var i = 0; i < myArry.length; ++i ){
 
 
 const h1 = document.createElement('h1');
-h1.id = 'attribute919'
+h1.id = 'h1'
 h1.innerText = `Dive into the DOM!`;
 const input1 = document.createElement(`input`);
 
@@ -49,19 +52,21 @@ news1.innerHTML = '<b  data-banana="wolfMan313"  href="#news1">News1</b>'
 let joBob = document.createElement('div')
 joBob.id = 'joBob'
 joBob.innerText = 'joBob'
-let kim22 = {name: 'kim77'}
+let num = {name: 'kim', age: '19'};
+let text = JSON.stringify(num);
+
+
 let wolfMan99 = ['wolfMan515', 'wolfMan616', ]
 export let wolf4 = document.createElement('div');
 wolf4.id = `wolf4`;
 wolf4.classList.add(`redBorder`);
 wolf4.dataset.banana = wolfMan99 
-wolf4.dataset.kim = kim22 
+wolf4.dataset.kim = text
 wolf4.Umbrella = wolfMan99
 
 
 
 wolf4.append(link,header, section, button1, news1, joBob );
-
 
 
 

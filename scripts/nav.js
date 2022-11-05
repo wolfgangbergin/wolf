@@ -2,6 +2,7 @@ import { wolf1 } from './wolf1/wolf1.js';
 import { wolf2 } from './wolf2/wolf2.js';
 import { wolf3 } from './wolf3/wolf3.js';
 import { wolf4 } from './wolf4/wolf4.js';
+import { helper } from './wolf4/helper.js';
 import { log1 } from './log1/log1.js';
 import { log2 } from './log2/log2.js';
 
@@ -41,6 +42,7 @@ function nav(param1) {
       break;
     case param1 === 'wolf_4':
       wolfgang.replaceChildren(wolf4);
+      helper();
 
       break;
     case param1 === 'log_1':
@@ -57,50 +59,3 @@ function nav(param1) {
 }
 
 nav('wolf_4');
-
-let kimBg = (element) => {
-  element.classList.add('blackBackground');
-};
-
-let kimYb = (element) => {
-  element.classList.toggle('yellowBorder');
-};
-let kimGb = (element) => {
-  element.classList.add('greenBorder');
-};
-let kimPg = (element) => {
-  element.classList.add('pinkBackground');
-};
-let redText = (element) => {
-  element.classList.add('redText');
-};
-let borderRadius = (element) => {
-  element.style.borderRadius = '5rem'
-};
-let michigan = ()=>{
-  input1.focus()
-}
-button1.addEventListener('click' , michigan)
-document
-  .querySelector('#wolf4')
-  .firstChild.nextSibling.lastChild.setAttribute(
-    'FruityPebbles',
-    'Attribute kim'
-  );
-
-
-news1.setAttribute('FruityPebbles', 'Attribute wolMan');
-
-item2.setAttribute('FruityPebbles', 'Attribute 313');
-let temp2 = document.querySelectorAll(' [FruityPebbles~=Attribute]');
-
-temp2.forEach((E) => {
-  kimBg(E), kimYb(E), redText(E), borderRadius(E);
-});
-
-attribute919.style.fontSize = '5rem'
-
-dir(wolf4.dataset.banana)
-dir(wolf4.dataset.kim)
-log(wolf4.Umbrella)
-dir(wolf4)
