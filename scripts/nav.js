@@ -77,7 +77,10 @@ let redText = (element) => {
 let borderRadius = (element) => {
   element.style.borderRadius = '5rem'
 };
-
+let michigan = ()=>{
+  input1.focus()
+}
+button1.addEventListener('click' , michigan)
 document
   .querySelector('#wolf4')
   .firstChild.nextSibling.lastChild.setAttribute(
@@ -95,4 +98,9 @@ temp2.forEach((E) => {
   kimBg(E), kimYb(E), redText(E), borderRadius(E);
 });
 
-log(attribute919)
+attribute919.style.fontSize = '5rem'
+
+dir(wolf4.dataset.banana)
+dir(wolf4.dataset.kim)
+log(wolf4.Umbrella)
+dir(wolf4)

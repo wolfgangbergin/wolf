@@ -1,10 +1,8 @@
-function testWolf(){
-    kim.adress = '313'
-}
+
 
 let button1 = document.createElement('button')
 button1.id = `button1`
-button1.addEventListener('click', testWolf)
+
 button1.innerText = 'testWolf'
 
 let myArry = [`item1`, `item2`, `item3`]
@@ -46,15 +44,19 @@ link.innerHTML = '<a id="kimbo212" >Jump to New content 1</a>'
 let news1 = document.createElement('p')
 news1.id = 'news1'
 
-news1.innerHTML = '<b target="_blank"   href="#news1">News1</b>'
+news1.innerHTML = '<b  data-banana="wolfMan313"  href="#news1">News1</b>'
 
 let joBob = document.createElement('div')
 joBob.id = 'joBob'
 joBob.innerText = 'joBob'
-
+let kim22 = {name: 'kim77'}
+let wolfMan99 = ['wolfMan515', 'wolfMan616', ]
 export let wolf4 = document.createElement('div');
 wolf4.id = `wolf4`;
 wolf4.classList.add(`redBorder`);
+wolf4.dataset.banana = wolfMan99 
+wolf4.dataset.kim = kim22 
+wolf4.Umbrella = wolfMan99
 
 
 
