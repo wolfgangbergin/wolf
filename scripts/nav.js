@@ -3,6 +3,7 @@ import { wolf2 } from './wolf2/wolf2.js';
 import { wolf3 } from './wolf3/wolf3.js';
 import { wolf4 } from './wolf4/wolf4.js';
 import { helper } from './wolf4/helper.js';
+import { width } from './wolf4/cssFunc.js';
 import { log1 } from './log1/log1.js';
 import { log2 } from './log2/log2.js';
 
@@ -28,7 +29,7 @@ function nav(param1) {
   switch (true) {
     case param1 === 'wolf_1':
       wolfgang.innerHTML = null;
-      wolfgang.insertAdjacentElement('beforeend', wolf1());
+      wolfgang.replaceChildren(wolf1());
       toolTip();
 
       break;
@@ -43,6 +44,7 @@ function nav(param1) {
     case param1 === 'wolf_4':
       wolfgang.replaceChildren(wolf4);
       helper();
+     
 
       break;
     case param1 === 'log_1':
@@ -58,4 +60,5 @@ function nav(param1) {
   }
 }
 
-nav('wolf_4');
+nav('wolf_1');
+

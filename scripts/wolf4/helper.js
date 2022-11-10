@@ -1,43 +1,35 @@
+import {
+  width,
+  borderRadius,
+  redText,
+  pinkBackground,
+  greenBorder,
+  yellowBorder,
+  blackBackground,
+} from './cssFunc.js';
+
 export function helper() {
-  let kimBg = (element) => {
-    element.classList.add('blackBackground');
+  let header = document.body.querySelector('div > header');
+  yellowBorder(header);
+ 
+
+  let wolfButton = () => {
+    log(input1.value);
+
+    header.insertAdjacentHTML('beforeend', '<div>wolfman313</div>');
   };
 
-  let kimYb = (element) => {
-    element.classList.toggle('yellowBorder');
-  };
-  let kimGb = (element) => {
-    element.classList.add('greenBorder');
-  };
-  let kimPg = (element) => {
-    element.classList.add('pinkBackground');
-  };
-  let redText = (element) => {
-    element.classList.add('redText');
-  };
-  let borderRadius = (element) => {
-    element.style.borderRadius = '5rem';
-  };
+  let button1 = document.querySelector('#button1');
+  button1.addEventListener('click', wolfButton);
+//______________________ Don't erase
+const UL = document.querySelector('section > ul')
+const TEMP2 = wolf4.querySelectorAll('ul *')
 
-  document
-    .querySelector('#wolf4')
-    .firstChild.nextSibling.lastChild.setAttribute(
-      'FruityPebbles',
-      'Attribute kim'
-    );
+const TEMP3 = UL.getElementsByTagName('*')
+const TEMP4 = UL.childNodes
+let clone1 = header.cloneNode(true)
+UL.insertAdjacentElement('beforeend', clone1)
 
-  news1.setAttribute('FruityPebbles', 'Attribute wolMan');
 
-  item2.setAttribute('FruityPebbles', 'Attribute 313');
-  let temp2 = document.querySelectorAll(' [FruityPebbles~=Attribute]');
 
-  temp2.forEach((E) => {
-    kimBg(E), kimYb(E), redText(E), borderRadius(E);
-  });
-
-  h1.style.fontSize = '5rem';
-
-  dir(JSON.parse(wolf4.dataset.kim));
-
-  log(wolf4.Umbrella);
 }

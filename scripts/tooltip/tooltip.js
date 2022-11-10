@@ -1,22 +1,22 @@
 
 
 export function toolTip() {
-    let master = document.querySelector('#master');
-    master.classList.add('master')
+    const MASTER = document.querySelector('#MASTER');
+    MASTER.classList.add('MASTER')
 
     const TOOLTIP = document.createElement('div');
-    let arrow = document.createElement('div');
-    arrow.classList.add('arrow')
+    const ARROW = document.createElement('div');
+    ARROW.classList.add('ARROW')
    
   TOOLTIP.classList.add('TOOLTIP')
   
-    TOOLTIP.innerHTML = master.dataset.popup;
-    master.append(TOOLTIP);
-    master.addEventListener('mouseover', () => {
+    TOOLTIP.innerHTML = MASTER.dataset.popup;
+    MASTER.append(TOOLTIP);
+    MASTER.addEventListener('mouseover', () => {
       TOOLTIP.classList.toggle('wolfTestA')
-       TOOLTIP.insertAdjacentElement('beforeend', arrow)
+       TOOLTIP.insertAdjacentElement('beforeend', ARROW)
     });
-    master.addEventListener('mouseout', () => {
+    MASTER.addEventListener('mouseout', () => {
       TOOLTIP.classList.toggle('wolfTestA')
       
     

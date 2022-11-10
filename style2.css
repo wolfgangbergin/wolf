@@ -1,13 +1,36 @@
-.master {
+.PARAGRAPH_1{
+ 
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: inherit;
+line-height: none;
+background: none;
+
+outline: 2px solid darkblue;
+border: 2px solid darkblue;
+outline-offset: -2px;
+padding: 0.5em 1.5em;
+margin: 1rem;
+transition: outline-offset .5s ease-in-out, border .5s ease-in-out;
+}
+
+.PARAGRAPH_1:hover,
+.PARAGRAPH_1:focus{
+  outline-offset: 2px;
+  outline: 6px double darkblue;
+}
+
+.MASTER {
   width: 300px;
   height: 400px;
   position: relative;
   background: #ffffff url('master.jpg') no-repeat center;
   background-size: cover;
   float:right;
- 
+  margin: 1rem;
 }
-.arrow {
+.ARROW {
   border: 30px solid transparent;
   border-top-color: var(--background3);
   width: 30px;
@@ -85,3 +108,10 @@
   color: red ;
 }
 
+.width{
+  width: 99vw;
+}
+
+.visability{
+  display: none;
+}

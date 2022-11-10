@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: fantasy;
+ 
 
 }
 :root {
@@ -51,6 +52,7 @@
 
 .nav-checkbox {
   display: none;
+  
 }
 
 .label {
