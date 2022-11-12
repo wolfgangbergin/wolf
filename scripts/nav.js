@@ -23,7 +23,7 @@ wolf_3.addEventListener('click', () => nav('wolf_3'));
 wolf_4.addEventListener('click', () => nav('wolf_4'));
 log_1.addEventListener('click', () => nav('log_1'));
 log_2.addEventListener('click', () => nav('log_2'));
-movies_1.addEventListener('click', () => nav('movies_1'));
+// movies_1.addEventListener('click', () => nav('movies_1'));
 
 let wolfgang = document.getElementById('wolfgang');
 
@@ -67,5 +67,5 @@ function nav(param1) {
   }
 }
 
-nav('movies_1');
+nav('wolf_1');
 
