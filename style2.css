@@ -1,35 +1,42 @@
 .PARAGRAPH_1{
- 
+
+ color: #fff;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
   font-size: inherit;
 line-height: none;
-background: none;
+background: #5559ab;
 
-outline: 2px solid darkblue;
-border: 2px solid darkblue;
+outline: 2px double #5559ab;
+border: 2px solid #5559ab;
 outline-offset: -2px;
 padding: 0.5em 1.5em;
 margin: 1rem;
-transition: outline-offset .5s ease-in-out, border .5s ease-in-out;
+transition: outline-offset .5s ease-in-out,border .5s ease-in-out,  outline .5s ease-in-out;
 }
 
 .PARAGRAPH_1:hover,
 .PARAGRAPH_1:focus{
-  outline-offset: 2px;
-  outline: 6px double darkblue;
+  border: 2px solid #fff;
+
+  outline-offset: -9.3px;
+  outline: 6px double #fff;
 }
 
-.MASTER {
-  width: 300px;
-  height: 400px;
-  position: relative;
-  background: #ffffff url('master.jpg') no-repeat center;
-  background-size: cover;
-  float:right;
+
+.PARAGRAPH_3{
+  border-top: black 2px solid ;
   margin: 1rem;
+  padding: 1rem;
 }
+.PARAGRAPH_4{
+  border-top: black 2px solid ;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+
 .ARROW {
   border: 30px solid transparent;
   border-top-color: var(--background3);

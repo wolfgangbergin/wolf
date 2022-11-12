@@ -12,7 +12,7 @@
   --background1: rgba(255, 255, 255, .5);
   --background2: rgba(255, 255, 255, 0);
   --background3:#333 ;
-
+--outline1: 2px;
 }
 .header {
   z-index: 999;
@@ -99,9 +99,21 @@
 body{
   /* min-height: auto;  */
 
-  background:pink;
-  background-image: url(./lopez.jpg);
+  background:#fff;
+
  background-size:53vw;
+}
+
+.MASTER {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background: #ffffff url('master.jpg') no-repeat center;
+  background-size: cover;
+  /* float:right; */
+ 
+  margin: auto;
+ 
 }
 
 /* --------------------------------------------------- */
@@ -109,6 +121,20 @@ body{
 
 
 @media screen and (min-width: 500px) {
+  .PARAGRAPH_2{
+    border-top: black 2px solid ;
+    margin: 1rem;
+    padding: 1rem;
+    width: 57vw;
+   
+  }
+  .MASTER {
+ 
+
+    float:right;
+    margin: 1rem;
+  
+  }
  
   .nav-checkbox:checked ~ .nav {
     transform: rotateY(0deg);
